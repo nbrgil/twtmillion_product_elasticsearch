@@ -1,3 +1,5 @@
 .idea
 data
 venv
+metastore_db
+spark-warehouse
