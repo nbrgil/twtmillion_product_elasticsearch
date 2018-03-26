@@ -32,7 +32,7 @@ fact_sample = spark.sql("""
 				THEN (f.product_net_revenue - f.product_net_cost) / f.product_net_revenue * 100
 				ELSE 0
 			END) as percentage_margin
-		FROM fact f
+		FROM fact f 	
 		GROUP BY f.order_date, f.product
 	) a
 	JOIN dim b ON (a.product = b.product)

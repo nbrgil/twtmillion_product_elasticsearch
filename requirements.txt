@@ -1,4 +1,3 @@
 pyspark
 elasticsearch
 pandas
-__pycache__

@@ -4,7 +4,10 @@ from pyspark.sql.functions import expr, regexp_replace
 
 
 class ProductDimension:
-	
+	"""
+		Reads dim.csv and
+	"""
+
 	def __init__(self, spark_session):
 		self.spark = spark_session
 		self.sc = self.spark.sparkContext
